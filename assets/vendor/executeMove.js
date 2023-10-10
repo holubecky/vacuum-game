@@ -70,7 +70,7 @@ function executeMovements(index) {
 
     setTimeout(() => {
         executeMovements(index + 1);
-    }, 100);  // Delay of 1 second
+    }, 50); 
 }
 
 executeMovements(0);
