@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacuum navigation game</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="centered-content">
+        <h1>🤖 Vacuum Voyage Challenge! 🚀</h1>
+        <p>Oh no! 🚨 Our trusty robotic vacuum's navigation system is on the blink! It can't find its way back to its charging station. 🌌 Can you help it? </p>
+        <p><b>Your Mission:</b>  Write a code that will guide the lost vacuum through the maze of furniture and obstacles, all the way back to its charging pad. Think of it as the vacuum's vision sensor to avoid obstacles ️</p>
+        <p>Good luck, coder! May your vacuum never run low on energy again! 🌟</p>
+
+
+        <br>
+        <h4>LEGEND:</h4>
+
+        <p class="btn-style hover-execute-forward">player.executeForward();</p>
+        <p class="btn-style hover-can-move-forward-">player.canMoveForward; (false)</p>
+        <p class="btn-style hover-execute-left">player.executeLeft(); change direction</p>
+        <p class="btn-style hover-execute-right"> player.executeRight(); change direction</p>
+
+        <div class="grid-wrapper" style="margin: 1em 0;">
+            <div class="small-grid" style="background-color: white">
+            <div class="small-cell" id="cell-1"></div>
+            <div class="small-cell" id="cell-2"></div>
+            <div class="small-cell" id="cell-3"></div>
+            <div class="small-cell" id="cell-4"></div>
+            <div class="small-cell" id="cell-5"></div>
+            <div class="small-cell" id="cell-6"></div>
+            <div class="small-cell" id="cell-7"></div>
+            <div class="small-cell" id="cell-8"></div>
+            <div class="small-cell" id="cell-9"></div>
+            <div class="small-cell" id="cell-10"></div>
+            <div class="small-cell" id="cell-11"></div>
+            <div class="small-cell" id="cell-12"></div>
+            <div class="small-cell player" id="cell-13"></div>
+            <div class="small-cell vision" id="cell-14"></div>
+            <div class="small-cell" id="cell-15"></div>
+            <div class="small-cell" id="cell-16"></div>
+            <div class="small-cell" id="cell-17"></div>
+            <div class="small-cell" id="cell-18"></div>
+            <div class="small-cell" id="cell-19"></div>
+            <div class="small-cell" id="cell-20"></div>
+            <div class="small-cell" id="cell-21"></div>
+            <div class="small-cell" id="cell-22"></div>
+            <div class="small-cell" id="cell-23"></div>
+            <div class="small-cell" id="cell-24"></div>
+            <div class="small-cell" id="cell-25"></div>
+        </div>
+        </div>
+
+        <br>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid-container">
+            <div class="grid" id="grid"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/vendor/game.js"></script>
+<script src="assets/js/solution.js"></script>
+<script src="assets/vendor/executeMove.js"></script>
+</body>
+</html>

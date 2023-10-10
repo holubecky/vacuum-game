@@ -1,0 +1,193 @@
+
+body {
+    background-color: #f5f5f5; /* A light gray background */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Ensures the font is consistent across browsers */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(40, 20px);
+    gap: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+}
+
+.player2 {
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+.cell.player2 {
+    background-color: lightblue;
+}
+
+.target {
+    background-color: green;
+}
+
+.wall {
+    background-color: black;
+}
+
+.obstacle {
+    background-color: black;
+}
+
+.can-move {
+    background-color: green;
+}
+
+.blocked {
+    background-color: yellow;
+}
+
+.collision {
+    background-color: red;
+}
+
+.wrapper {
+    max-width: 1240px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0.1));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to the wrapper for depth */
+}
+
+
+.centered-content h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.centered-content p {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.small-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    gap: 2px;
+    margin: 0 auto;
+
+}
+
+.small-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+}
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Player's default styling */
+.small-cell.player {
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+/* Vision's default styling */
+.small-cell.vision {
+    background-color: yellow;
+}
+
+/* On hover of hover-execute-forward, move the player and vision cells one square forward */
+.hover-execute-forward:hover ~ .grid-wrapper .small-grid #cell-13 {
+    background-color: #eee; /* reset the background color */
+    border-radius: 0;       /* reset the border radius */
+}
+
+.hover-execute-forward:hover ~ .grid-wrapper .small-grid #cell-14 {
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+.hover-execute-forward:hover ~ .grid-wrapper .small-grid #cell-15 {
+    background-color: yellow;
+}
+
+/*LEFT*/
+.hover-execute-left:hover ~ .grid-wrapper .small-grid #cell-14 {
+    background-color: #eee; /* reset the background color */
+}
+
+.hover-execute-left:hover ~ .grid-wrapper .small-grid #cell-8 {
+    background-color: yellow;
+}
+/*LEFT END */
+
+
+/*    RIGHT*/
+.hover-execute-right:hover ~ .grid-wrapper .small-grid #cell-14 {
+    background-color: #eee;
+}
+
+.hover-execute-right:hover ~ .grid-wrapper .small-grid #cell-12 {
+    background-color: #eee; /* reset the background color */
+}
+
+.hover-execute-right:hover ~ .grid-wrapper .small-grid #cell-18 {
+    background-color: yellow;
+}
+/*    RIGHT END */
+
+/*   CAN GO FORWARD */
+.hover-can-move-forward-:hover ~ .grid-wrapper .small-grid .vision {
+    background-color: red;
+}
+
+.hover-can-move-forward-:hover ~ .grid-wrapper .small-grid #cell-4,
+.hover-can-move-forward-:hover ~ .grid-wrapper .small-grid #cell-9,
+.hover-can-move-forward-:hover ~ .grid-wrapper .small-grid #cell-19,
+.hover-can-move-forward-:hover ~ .grid-wrapper .small-grid #cell-24 {
+    background-color: black;
+}
+
+
+
+
+
+/*    BTN STYLE*/
+.btn-style {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007BFF; /* Bootstrap primary button color */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-style:hover {
+    background-color: #0056b3; /* A slightly darker shade for hover */
+}
+
+/* You can also add a focus style for better accessibility */
+.btn-style:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+}
+
+/*    BTN STYLE END */
