@@ -57,7 +57,7 @@ function move(item) {
 function executeMovements(index) {
     if (index=== movements.length && index !== 0) {
         if (movingVacuum.pos.x === 38 && movingVacuum.pos.y === 38) {
-            alert('Vacuum is in chargin pad, required moves forward: ' + movements.length + '  Pocet krokov: ' + globalSteps);
+            alert('Vacuum is in chargin pad, required moves forward: ' + globalSteps);
         } else {
             alert('Your vacuum did not reach the charging pad');
         }
