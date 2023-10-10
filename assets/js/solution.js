@@ -12,11 +12,6 @@ let steps = 0;
 while (!vacuum.isInFinish && steps < 500) {
     // Your code here
 
-    if (vacuum.canMoveForward){
-        vacuum.executeForward();
-    } else {
-        vacuum.turnRight();
-    }
 
 
     steps++;
