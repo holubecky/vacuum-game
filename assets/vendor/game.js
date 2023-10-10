@@ -1,6 +1,7 @@
 const grid = document.getElementById('grid');
 const gridSize = 40;
 let movements = [];
+let globalSteps = 0
 
 const movingVacuum = {
     pos: { x: 1, y: 1 },
@@ -50,6 +51,7 @@ const vacuum = {
     },
 
     moveForward: function() {
+        globalSteps++
         const fromPosition = { ...this.pos };
         const toPosition = { x: this.pos.x + this.direction.x, y: this.pos.y + this.direction.y };
 
