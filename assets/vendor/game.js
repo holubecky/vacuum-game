@@ -133,27 +133,27 @@ function initializeGrid() {
     }
 
     // Placing 12 obstacles. Adjust the coordinates as needed.
-    placeObstacle(10, 1, 25,4);
-    placeObstacle(1, 15, 4,8);
-    placeObstacle(1, 27, 4,4);
-    placeObstacle(15, 15, 15,6);
-    placeObstacle(37,24, 2,4);
-    placeObstacle(15,33, 12,6);
+    // placeObstacle(10, 1, 25,4);
+    // placeObstacle(1, 15, 4,8);
+    // placeObstacle(1, 27, 4,4);
+    // placeObstacle(15, 15, 15,6);
+    // placeObstacle(37,24, 2,4);
+    // placeObstacle(15,33, 12,6);
 
-    // placeObstacle(6, 1, 8, 6);
-    // placeObstacle(26, 1, 8, 6);
-    // placeObstacle(1, 10, 5, 6);
-    // placeObstacle(35, 25, 5, 6);
-    // placeObstacle(10, 8, 5, 5); 
-    // placeObstacle(25, 8, 5, 5);
-    // placeObstacle(10, 28, 5, 5);
-    // placeObstacle(25, 23, 5, 14);
-    // placeObstacle(17, 15, 7, 7);
-    // placeObstacle(17, 5, 7, 4);
-    // placeObstacle(17, 28, 7, 4);
-    // placeObstacle(7, 18, 12, 5);
-    // placeObstacle(30, 18, 4, 5);
-    // placeObstacle(10, 30, 4, 10);
+    placeObstacle(6, 1, 8, 6);
+    placeObstacle(26, 1, 8, 6);
+    placeObstacle(1, 10, 5, 6);
+    placeObstacle(35, 25, 5, 6);
+    placeObstacle(10, 8, 5, 5); 
+    placeObstacle(25, 8, 5, 5);
+    placeObstacle(10, 28, 5, 5);
+    placeObstacle(25, 23, 5, 14);
+    placeObstacle(17, 15, 7, 7);
+    placeObstacle(17, 5, 7, 4);
+    placeObstacle(17, 28, 7, 4);
+    placeObstacle(7, 18, 12, 5);
+    placeObstacle(30, 18, 4, 5);
+    placeObstacle(10, 30, 4, 10);
 
 }
 
